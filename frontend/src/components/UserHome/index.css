@@ -1,0 +1,43 @@
+.user-home {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 100px;
+    padding: 20px;
+    width: 100%;
+}
+
+.no-note {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-left: 20px;
+    padding: 10px;
+    border: 1px solid #cec8c8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+}
+
+@media (max-width: 940px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .no-note {
+        margin-left: 0%;
+    }
+}
+
+@media (min-width: 1450px) {
+    .content {
+        width: 80%;
+    }
+}

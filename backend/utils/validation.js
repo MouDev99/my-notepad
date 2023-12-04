@@ -6,9 +6,12 @@ const handleValidationErrors = (req, _res, next) => {
   const validationErrors = validationResult(req);
 
   if (!validationErrors.isEmpty()) {
-    const errors = validationErrors
+    let errors = validationErrors
       .array()
       .map((error) => `${error.msg}`);
+
+    // remove duplicate error msgs
+    errors = [...new Set(errors)];
 
     const err = Error('Bad request.');
     err.errors = errors;

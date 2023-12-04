@@ -1,0 +1,22 @@
+.tool-bar {
+    display: flex;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto 0;
+    padding: 20px 0;
+    width: 90%;
+}
+
+@media (max-width: 525px) {
+    .tool-bar {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1450px) {
+    .tool-bar {
+        width: 48%;
+    }
+}

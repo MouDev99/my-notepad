@@ -1,0 +1,76 @@
+.note-actions-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    margin: 0 auto;
+    padding: 15px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.note-actions-bar  i {
+    border: 1px solid #ddd;
+    transform: scale(1.5);
+    cursor: pointer;
+    padding: 3.5px 4px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    margin: 0 12px;
+    height: fit-content;
+}
+
+.note-actions-bar i:hover {
+    background-color: #ddd;
+}
+
+.search-input {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    width: 40%;
+    border-right: 3px solid #918b8b;
+}
+
+.action-icons-container {
+    display: flex;
+}
+
+@media (max-width: 800px) {
+    .note-actions-bar {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .search-input {
+        margin-left: 0;
+        border: none;
+        margin: 18px 0;
+        width: 60%;
+    }
+
+    .note-actions-bar  i {
+        margin: 0 8px;
+    }
+}
+
+@media (min-width: 900px) {
+    .note-actions-bar {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 575px) {
+    .search-input {
+        order: 1;
+    }
+}
+
+@media (max-width: 375px) {
+    .search-input {
+        width: 90%;
+    }
+}

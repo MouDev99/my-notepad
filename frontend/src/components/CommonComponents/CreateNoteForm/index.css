@@ -1,0 +1,80 @@
+.create-note-form {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.create-note-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.create-note-form div {
+    margin-bottom: 15px;
+}
+
+.create-note-form label, .create-note-form p {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.create-note-form input,
+.create-note-form textarea {
+    width: calc(100% - 10px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.create-note-form textarea {
+    height: 200px;
+}
+
+.create-note-form input:focus,
+.create-note-form textarea:focus {
+    border: 1px solid #000000;
+    outline: none;
+}
+
+.create-note-form div:last-child {
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+    align-items: center;
+}
+
+.create-note-form .btn {
+    font-weight: bolder;
+    word-wrap: break-word;
+}
+
+.backend-errors {
+    padding: 10px;
+    border:  2px solid #8B0000;
+    border-radius: 6px;
+    background-color: #DC143C;
+    color: white;
+    list-style: none;
+}
+
+@media (max-width: 450px ) {
+    .create-note-form div:last-child {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 340px ) {
+    .create-note-form div:last-child {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .create-note-form .btn {
+        width: 100%;
+    }
+}

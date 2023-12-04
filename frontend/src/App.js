@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { restoreUser } from './store/session';
 import HomePage from './components/HomePage';
@@ -10,11 +10,7 @@ function App() {
     dispatch(restoreUser());
   }, [dispatch]);
 
-  return (
-    <div>
-      <HomePage />
-    </div>
-  );
+  return (<HomePage />);
 }
 
 export default App;
